@@ -1,13 +1,12 @@
 import React from 'react';
-import './App.css';
+import Routes from 'Routes';
+import './app.scss';
+import './core/assets/styles/custom.scss';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Desafio DevSuperior</h1>
-      </header>
-    </div>
+    <Routes />
   );
 }
 

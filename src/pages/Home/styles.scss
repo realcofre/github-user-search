@@ -1,0 +1,33 @@
+.home-container{
+    width: 620px;
+    padding-left: 120px;
+    padding-top: 120px;
+}
+
+.home-content{
+    padding-bottom: 150px;
+}
+
+.home-title{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #062847;
+}
+
+.home-text{
+    padding-top: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+    color: #5A6774;
+}
+
+.home-link{
+    text-decoration: none;
+    color: #407BFF;
+}

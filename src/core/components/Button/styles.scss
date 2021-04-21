@@ -1,0 +1,24 @@
+.btn-desafio{
+    width: 101px;
+    height: 40px;
+    margin-top: 45px;
+    background: #1890FF;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
+    border: none;
+    top: calc(50% - 24px/2 + 165px);
+    cursor: pointer;
+    text-decoration: none;
+
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
+}
