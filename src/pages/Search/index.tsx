@@ -6,6 +6,7 @@ import './styles.scss';
 import InfoLoader from './components/Loaders/InfoLoader';
 import ImageLoader from './components/Loaders/ImageLoader';
 import { User } from 'core/types/UserInfo/UserInfo';
+import UserInfo from './components/UserInfo';
 
 const Search = () => {
 
@@ -56,8 +57,20 @@ const Search = () => {
                 <div className="info-container">
                     <div className="info-content">
                         <div className="user-info">
-                            <ImageLoader />
-                            <InfoLoader />
+                            { isLoading ? <div><ImageLoader /><InfoLoader /></div> : (
+                                <>
+                                <UserInfo 
+                                    foto={user?.avatar_url} 
+                                    empresa={user?.company}
+                                    site={user?.blog}
+                                    localidade={user?.location}
+                                    membro_desde={user?.created_at}
+                                    numero_repositorios={user?.public_repos}
+                                    numero_seguidores={user?.followers}
+                                    numero_seguindo={user?.following}
+                                />
+                                </>
+                            )}
                         </div>
                     </div>
                     
