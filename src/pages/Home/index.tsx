@@ -11,9 +11,11 @@ const Home = () => (
             <p className="home-text">Favor observar as instruções passadas no capítulo sobre a elaboração deste projeto.</p>
             <p className="home-text"> Este design foi adaptado a partir de Ant Design System for Figma, de Mateusz Wierzbicki: 
             <a href="mailto:antforfigma@gmail.com" className="home-link"> antforfigma@gmail.com</a></p>
-            <Link to="/search" style={{ textDecoration: 'none' }}>
-                <Button text="Começar" />
-            </Link>
+            <div className="btn-start">
+                <Link to="/search" style={{ textDecoration: 'none' }}>
+                    <Button text="Começar" />
+                </Link>
+            </div>
         </div>
     </div>
 );

@@ -47,7 +47,7 @@ const Search = () => {
                                 }}
                             />
                         </div>
-                        <div className="row">
+                        <div className="btn-search">
                             <Button text="Encontrar" />
                         </div>
                     </div>
@@ -57,8 +57,12 @@ const Search = () => {
                 <div className="info-container">
                     <div className="info-content">
                         <div className="user-info">
-                            { isLoading ? <div><ImageLoader /><InfoLoader /></div> : (
+                            { isLoading ? <div className="user-info-loader">
+                                    <div><ImageLoader /></div>
+                                    <div><InfoLoader /></div>
+                                </div> : (
                                 <>
+                                { user ? 
                                 <UserInfo 
                                     foto={user?.avatar_url} 
                                     empresa={user?.company}
@@ -68,7 +72,9 @@ const Search = () => {
                                     numero_repositorios={user?.public_repos}
                                     numero_seguidores={user?.followers}
                                     numero_seguindo={user?.following}
-                                />
+                                    url={user.html_url}
+                                /> : null
+                                }
                                 </>
                             )}
                         </div>
